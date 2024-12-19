@@ -47,12 +47,9 @@ kotlin {
 
 javafx {
     version = "22.0.1"
-    modules("javafx.controls", "javafx.swing")
+    modules("javafx.controls", "javafx.swing 重複的")
 }
 
-// 設置 javacppPlatform 屬性
-val javacppPlatform: String by project
-ext.set("javacppPlatform", "windows-x86_64")
 
 compose.desktop {
     application {
