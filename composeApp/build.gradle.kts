@@ -12,6 +12,12 @@ plugins {
 
 val javacvVersion = "1.5.10"
 
+/**
+ * https://github.com/bytedeco/gradle-javacpp
+ * 文檔在這，不過用法不確定是哪種，可能要都試試看
+ */
+ext.set("javacppPlatform", "windows-x86_64,macosx-arm64,macosx-x86_64")
+
 kotlin {
     jvm("desktop") {
         withJava()
