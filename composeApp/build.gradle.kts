@@ -47,7 +47,7 @@ kotlin {
 
 javafx {
     version = "22.0.1"
-    modules("javafx.controls", "javafx.swing 重複的")
+    modules("javafx.controls", "javafx.swing")
 }
 
 
